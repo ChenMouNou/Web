@@ -474,17 +474,48 @@ footer {
 #footls2{
     position: fixed;
     left: 0.7%;
-    bottom: 21%;
+    bottom: 20%;
 }
 .footls3{/* 删除黑点 */
-	list-style: none;
-	padding-left: 0; /* 可选 */
-	position: fixed;
-    left: 1%;
-    bottom: 45%;
-	line-height: 1.5; /* 120% of font size */
+       list-style: none;
+       padding-left: 0; /* 可选 */
+       position: fixed;
+       left: 1%;
+       bottom: 45%;
+       line-height: 1.5; /* 120% of font size */
   }
 .size_color{
 	font-size: 22px;
 	color: rgb(214, 229, 145);
 }
+
+/* we.html */
+.image-list {
+	display: flex;
+	flex-direction: row; /* 水平排列 */
+	list-style: none; /* 隐藏默认的列表标记 */
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* 调整图片和文本的位置关系 */
+  .image-list li {
+	position: relative;
+  }
+  
+  .image-list img {
+	border-radius: 50%;
+	display: block;
+	width: 150px;
+	height: 150px;
+  }
+  
+  .image-list p {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+	margin: 0;
+  }
