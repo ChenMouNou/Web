@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4088526 */
-  src: url('//at.alicdn.com/t/c/font_4088526_wzc9iiukt5.woff2?t=1685082437999') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4088526_wzc9iiukt5.woff?t=1685082437999') format('woff'),
-       url('//at.alicdn.com/t/c/font_4088526_wzc9iiukt5.ttf?t=1685082437999') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_4088526_d3uybb1dzdn.woff2?t=1685085462902') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4088526_d3uybb1dzdn.woff?t=1685085462902') format('woff'),
+       url('//at.alicdn.com/t/c/font_4088526_d3uybb1dzdn.ttf?t=1685085462902') format('truetype');
 }
 
 .iconfont {
@@ -13,19 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-huojian:before {
+  content: "\e642";
+}
+
 .icon-github:before {
   content: "\e741";
 }
 
 .icon-xieboke:before {
   content: "\e624";
-}
-
-.icon-tubiao26:before {
-  content: "\e626";
-}
-
-.icon-shejiaotubiao-39:before {
-  content: "\e646";
 }
 
