@@ -1,100 +1,149 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>家宠百科</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
-		<!-- <script src="./js/sty.js"></script> -->
-		<link rel="stylesheet" href="./css/index.css" type="text/css"/ class="o">
-		<link rel="icon" href="./img/Keqing.png">
-        <style>
-            .container {
-                display: flex;
-                justify-content: center; /* 水平居中 */
-                align-items: center; /*垂直居中*/
-                height: 100vh; /* 让容器高度等于视窗高度 */
-            }
-            .imgs{
-            align-items: center; /*垂直居中*/
-            }
-            ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            }
-          
-            li {
-            padding: 10px;
-            }
-            p {
-                color: black;
-            }
-            body {
-            background: linear-gradient(to bottom, #50e8ff, #60aedf);
-            }
-        </style>
-	</head>
-	<body id="h">
-		<!--网页头部<header></header>
-			底部信息<footer></footer>
-			导航<nav></nav>
-			文章<article></article> 
-			侧边栏<aside></aside>
-			时间标签<time></time>
-			
-				h1:网站大标题
-			　　h2:网站副标题
-			　　h3:网站分类目录
-			　　h4:网站的文章分类
-			　　h5:文章标注
-			　　h6:tag标签
-			-->
-		<header>
-			<div class="hb">
-			<div class="headbox">
-				<div class="logo"></div><!-- logo图片 -->
-				<div class="tag"><!-- 标签分类 -->
-					<ul>
-						<li><a href="index.html">首页</a></li>
-						<li><a href="dog.html">狗狗</a></li>
-						<li><a href="cat.html">猫咪</a></li>
-						<li><a href="bird.html">家鸟</a></li>
-						<li><a href="water.html">水族</a></li>
-						<li><a href="reptile.html">爬虫</a></li>
-						<li><a href="we.html">关于我们</a></li>
-					</ul>
-					<input type="search" placeholder="输入"/>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cool Four People About Page</title>
+	<!-- External CSS -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/font_4088526_wzc9iiukt5.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Cool Four People</h1>
+			<nav>
+				<ul>
+					<li><a href="#" class="active">About Us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>We are a team of four creative and passionate individuals who love to design and develop visually stunning websites and applications. With over 10 years of combined experience, we have worked with clients from various industries and have helped them achieve their online goals.</p>
+			<div class="team">
+				<div class="member">
+					<img src="./img/ljy.jpg" alt="Member 1">
+					<h3>Jennifer Lee</h3>
+					<p>Web Designer</p>
+					<div class="social">
+						<a href="https://wpa.qq.com/msgrd?v=3&uin=2979509783&site=qq&menu=yes&jumpflag=1"><i class="iconfont icon-shejiaotubiao-39"></i></a>
+						<a href="#"><i class="iconfont icon-xieboke"></i></a>
+						<a href="#"><i class="iconfont icon-github"></i></a>
+						<a href="#"><i class="iconfont icon-tubiao26"></i></a>
+					</div>
 				</div>
-				<div class="person"><!-- 小功能区 -->
-					<span onmouseover="l()" class="serch"><a href="#">搜索</a></span><!-- 搜索按钮 -->
-					<span onmouseover="l()"><a href="dl.html">登录</a></span><!-- 登录按钮 -->
-					<span onmouseover="l()" class="p" style="nav-index: "1";" onmouseup="op()"></span><!-- 换色按钮 -->
+				<div class="member">
+					<img src="img/member2.jpg" alt="Member 2">
+					<h3>John Smith</h3>
+					<p>Web Developer</p>
+					<div class="social">
+						<a href="#"><i class="iconfont icon-shejiaotubiao-39"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
 				</div>
-			</div><!-- 顶部标签栏 -->
+				<div class="member">
+					<img src="img/member3.jpg" alt="Member 3">
+					<h3>Emily Chen</h3>
+					<p>Graphic Designer</p>
+					<div class="social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+				<div class="member">
+					<img src="img/member4.jpg" alt="Member 4">
+					<h3>Mike Johnson</h3>
+					<p>Marketing Specialist</p>
+					<div class="social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
 			</div>
-		</header>
-        <br/><br/><br/><br/><br/>
-        <div class="container">
-            <ul class="image-list">
-                <h2>设计人员：</h2>
-                <li><a href="https://linjiangyu.com">
-                  <img src="img/ljy.jpg" alt="image1">
-                  <p>林填</p>
-                </a></li>
-                <li><a href="https://cheyunhai.xyz">
-                  <img src="img/cyh.jpg" alt="image2">
-                  <p>车云海</p>
-                </a></li>
-                <li><a href="https://wangjiexian.xyz">
-                  <img src="img/wjx.jpg" alt="image3">
-                  <p>王杰贤</p>
-                </a></li>
-                <li><a href="https://chenmou.xyz">
-                    <img src="img/cqy.jpg" alt="image3">
-                    <p>陈清源</p>
-                </a></li>
-              </ul>
-        </div>
-        <br/><br/><br/><br/><br/>
-        <img src="./img/家宠百科2.png" alt="logo">
-    </body>
+		</div>
+	</section>
+
+<section class="services">
+	<div class="container">
+		<h2>Our Services</h2>
+		<div class="services-list">
+			<div class="service-wrapper">
+				<div class="service">
+					<i class="fas fa-code"></i>
+					<h3>Web Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien nisl, malesuada id justo eget, ultrices ullamcorper eros. Fusce blandit nibh et pretium fringilla.</p>
+				</div>
+			</div>
+			<div class="service-wrapper">
+				<div class="service">
+					<i class="fas fa-palette"></i>
+					<h3>Graphic Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien nisl, malesuada id justo eget, ultrices ullamcorper eros. Fusce blandit nibh et pretium fringilla.</p>
+				</div>
+			</div>
+			<div class="service-wrapper">
+				<div class="service">
+					<i class="fas fa-mobile-alt"></i>
+					<h3>Mobile App Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sapien nisl, malesuada id justo eget, ultrices ullamcorper eros. Fusce blandit nibh et pretium fringilla.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<section class="portfolio">
+		<div class="container">
+			<h2>Our Portfolio</h2>
+			<div class="gallery">
+				<div class="image">
+					<img src="img/portfolio1.jpg" alt="Portfolio 1">
+				</div>
+				<div class="image">
+					<img src="img/portfolio2.jpg" alt="Portfolio 2">
+				</div>
+				<div class="image">
+					<img src="img/portfolio3.jpg" alt="Portfolio 3">
+				</div>
+				<div class="image">
+					<img src="img/portfolio4.jpg" alt="Portfolio 4">
+				</div>
+				<div class="image">
+					<img src="img/portfolio5.jpg" alt="Portfolio 5">
+				</div>
+				<div class="image">
+					<img src="img/portfolio6.jpg" alt="Portfolio 6">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required>
