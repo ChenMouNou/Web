@@ -104,6 +104,7 @@ nav ul li a:hover,
 nav ul li a.active {
 	background-color: #fff;
 	color: #333;
+	border-radius: 40%;
 }
 
 .about {
