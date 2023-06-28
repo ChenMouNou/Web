@@ -12,9 +12,6 @@
                 <script type="text/javascript" src="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/js/Meting.min.js"></script>
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
-		<script>
-		 $(document).pjax('a[target!=_blank]', '#container', {fragment:'#container', timeout:8000})
-		</script>
 		<meting-js
 		            server="netease"
 		            type="playlist"
@@ -31,6 +28,9 @@
 
 	</head>
 	<body>
+		<script>
+		 $(document).pjax('a[target!=_blank]', '#container', {fragment:'#container', timeout:8000})
+		</script>
 		<header>
 			<div class="headbox">
 				<div class="logo"></div><!-- logo图片 -->
