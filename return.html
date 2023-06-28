@@ -31,6 +31,7 @@
     <!-- 引入 Google Fonts 和 Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/css/font_4088526_wzc9iiukt5.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/js/sweetalert.min.js"></script>
     
     <script type="text/javascript">
       setTimeout(function() {
@@ -38,7 +39,14 @@
       }, 5000); // 5秒钟后自动重定向
     </script>
   </head>
-  
+  <script>
+	swal({
+	  title: "提交成功",
+	  text: "将于5秒后跳转到首页",
+	  icon: "success",
+	  button: "OK",
+	});
+</script>
   <body>
     <div class="container">
       <div class="row">
