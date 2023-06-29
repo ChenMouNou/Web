@@ -7,6 +7,7 @@
 		<!-- <script src="./js/sty.js"></script> -->
                 <link rel="icon" href="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/img/Keqing.png">  
 		<link rel="stylesheet" href="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/css/index.css" type="text/css"/ class="o">
+		<link rel="stylesheet" href="https://cdn.staticaly.com/gh/ChenMouNou/Web@main/css/mark.css" type="text/css"/ class="o">
 		<link rel="stylesheet" href="https://cdn1.tianli0.top/gh/linjiangyu2/halo/cdn/bak/APlayer.min.css"/ type="text/css"/ class="o">
 		<script src="https://cdn1.tianli0.top/gh/linjiangyu2/halo/cdn/bak/APlayer.min.js"></script>
                 <link href="https://cdn1.tianli0.top/gh/linjiangyu2/halo/sakana.css" rel="stylesheet">
@@ -64,7 +65,21 @@
 				<div class="person"><!-- 小功能区 -->
 					<span onmouseover="l()" class="serch"><a href="#">搜索</a></span><!-- 搜索按钮 -->
 					<span onmouseover="l()"><a href="dl.html">登录</a></span><!-- 登录按钮 -->
+					<div class="mk-dark-mode-sky">
+        				<div class="mk-dark-mode-planet">
 					<span onmouseover="l()" class="p" style="nav-index: "1";" onmouseup="op()"></span><!-- 换色按钮 -->
+					</div>
+					</div>
+    					<script>
+    					/* 这里为了方便演示，点击页面中任意位置即可触发切换动画 */
+    					$("body").click(function() {
+    					    $("body").toggleClass("mk-dark-mode");
+    					    
+    					    var angle = $('.mk-dark-mode-planet').data('angle') + 360 || 360;
+    					    $('.mk-dark-mode-planet').css({'transform': 'rotate(' + angle + 'deg)' });
+    					    $('.mk-dark-mode-planet').data('angle', angle);
+    					});
+    					</script>
 				</div>
 			</div><!-- 顶部标签栏 -->
 			</div>
